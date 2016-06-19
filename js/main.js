@@ -31,23 +31,34 @@ var tripApp = angular.module('tripApp', ['ngRoute']);
 
 
 
-    // create the controller and inject Angular's $scope
+     // View Controller
     tripApp.controller('mainController', function($scope) {
-
-      // create a message to display in our view
       $scope.message = 'In Home Controller';
     });
 
-    tripApp.controller('aboutController', function($scope) {
 
-      // create a message to display in our view
+     // About Controller
+    tripApp.controller('aboutController', function($scope) {
       $scope.message = 'In about Controller';
+         $scope.SendInfo=function () {
+          $scope.message="Hello There";
+      }
     });
 
+    // Contact  Controller
     tripApp.controller('contactController', function($scope) {
 
-      // create a message to display in our view
       $scope.message = 'In contact Controller';
+      $scope.ContactInfo=function () {
+          if (!$scope.Name || !$scopeCntInfo) {
+              $scope.message = "Enter Some Information";
+              return;
+          }
+          else
+              $scope.message = "Thank you for your message";
+      }
+
+
     });
 
 

@@ -3,4 +3,10 @@
         <h1>Contact Page</h1>
 
         <p>{{ message }}</p>
+
+        Name <input type="text" class="form-control" id="frm" ng-model="Name">
+        <br>
+        Contact information <textarea class="form-control" rows="5" id="cnrinfo" ng-model="CntInfo"></textarea>
+        <br>
+         <button type="button" class="btn btn-info" ng-click="ContactInfo()">Contact Us!</button>
     </div>
