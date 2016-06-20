@@ -7,12 +7,58 @@ html, body {
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+    }
+
+
+#ModalButton{
+    opacity: 1;
+    z-index: 3;
+    margin: auto;
+    position:relative;
+    margin-top:50%;
+    background-color: #39a9e0;
+    color: aliceblue;
+    font-size: medium;
+    width:100%
+
+}
+
+
+
+#poster{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+
+}
+
+
+.navbarcustom{
+    background-color: #39a9e0;
+
+
+}
+
+#navbar a{
+    color: aliceblue;
+    font-size: 150%;
+
 }
 
 .dropdown {
     cursor:pointer;
 }
-
 
 .img-home-portfolio,
 .img-customer,

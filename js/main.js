@@ -2,6 +2,19 @@
 //version 1.0
 
 
+function ScriptMonitor () {
+    var element=document.getElementById("poster");
+    var button =document.getElementById("ModalButton");
+    
+    element.onended=function () {
+        console.log("Video finished");
+        element.style.zIndex=-1;
+        
+    };
+
+}
+
+
 var tripApp = angular.module('tripApp', ['ngRoute']);
 
     tripApp.config(function($routeProvider){
@@ -34,7 +47,7 @@ var tripApp = angular.module('tripApp', ['ngRoute']);
      // View Controller
     tripApp.controller('mainController', function($scope) {
       $scope.message = 'In Home Controller';
-    });
+      });
 
 
      // About Controller
