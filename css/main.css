@@ -2,6 +2,9 @@
 
 html, body {
     height: 100%;
+    background-size: cover;
+    background-image: url("Pictures/mapbackground.jpg");
+    font-family: 'Pacifico', cursive;
 }
 
 body {
@@ -14,7 +17,14 @@ body {
 
     }
 
+#clickhere{
+    position: absolute;
+    margin: auto;
+    font-family: 'Pacifico', cursive;
+    font-size: large;
+    text-shadow: 1px 1px 1px #ccc
 
+}
 #ModalButton{
     opacity: 1;
     z-index: 3;
@@ -28,6 +38,79 @@ body {
 
 }
 
+#submitbut{
+    background: #BFBFBF;
+    box-shadow: 0 3px 0 0 #007299;
+}
+
+#submitbut:active, #submitbut:focus{
+    background: #9A9A9A;
+    box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
+
+
+}
+
+#aboutpage{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+#mainaboutcontainer{
+    background-image: url("Pictures/grid.png") ;
+    background-repeat: repeat;
+    opacity: 0.9;
+    position: absolute;
+    top:55%;
+    left:50%;
+    top-margin:10%;
+    transform: translate(-50%,-50%);
+    font-family: 'Pacifico', cursive;
+    width:65%;
+    overflow: auto;
+    
+}
+
+#maincontactcontainercontainer{
+    background-image: url("Pictures/grid.png") ;
+    background-repeat: repeat;
+    opacity: 0.9;
+    position: absolute;
+    top:54.5%;
+    left:50%;
+    top-margin: 7%;
+    transform: translate(-50%,-50%);
+    font-family: 'Pacifico', cursive;
+    width:55%;
+
+}
+
+#text{
+    opacity: 1;
+    margin: auto;
+    font-family: 'Pacifico', cursive;
+    font-size: medium;
+    text-shadow: 1px 1px 1px #ccc
+
+}
+
+#exCollapsingNavbar{
+    cursor: pointer;
+
+}
+
+.button {
+	border-radius: 30px;
+    box-shadow: 0 3px 0 0 #007299;
+}
 
 
 #poster{
@@ -39,22 +122,28 @@ body {
     min-height: 100%;
     width: auto;
     height: auto;
+    z-index: 1;
+
+}
+
+.video{
+  position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     z-index: -1;
+}
 
+#datatoggler{
+    cursor:pointer;
+     cursor:hand;
 }
 
 
-.navbarcustom{
-    background-color: #39a9e0;
-
-
-}
-
-#navbar a{
-    color: aliceblue;
-    font-size: 150%;
-
-}
 
 .dropdown {
     cursor:pointer;

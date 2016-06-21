@@ -1,12 +1,26 @@
 <!-- contact.html -->
+
+    <div class="container" id="maincontactcontainercontainer">
+    <div class="span">
     <div class="jumbotron text-center">
-        <h1>Contact Page</h1>
+        <p>
+        <h1 style="font-family: 'Shadows Into Light Two', cursive" >Contact Us</h1>
+        </p>
+        <p>Thank you for your interest. Please leave us a message</p>
 
-        <p>{{ message }}</p>
+        <form action="http://formspree.io/satabdi.ganguly89@gmail.com" method="post">
 
-        Name <input type="text" class="form-control" id="frm" ng-model="Name">
+        <i class="fa fa-pencil" aria-hidden="true"></i> Name <input type="text" class="form-control" id="frm" ng-model="Name" name="name">
+
+
+
+       <i class="fa fa-comment-o" aria-hidden="true"></i> Message:  <textarea class="form-control" rows="5" id="cnrinfo" ng-model="CntInfo" name="comments"></textarea>
+
+            <input type="hidden" name="_next" value="http://triparound.de/#/contact"/>
         <br>
-        Contact information <textarea class="form-control" rows="5" id="cnrinfo" ng-model="CntInfo"></textarea>
-        <br>
-         <button type="button" class="btn btn-info" ng-click="ContactInfo()">Contact Us!</button>
-    </div>
+           <input type="submit" name="submit" value="Submit" id="submitbut">
+            </form>
+        </div>
+        </div>
+        </div>
+        <!--http://formspree.io/you@email.com-->

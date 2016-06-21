@@ -1,19 +1,7 @@
 //Name:Main JS skeleton
 //version 1.0
 
-
-function ScriptMonitor () {
-    var element=document.getElementById("poster");
-    var button =document.getElementById("ModalButton");
-    
-    element.onended=function () {
-        console.log("Video finished");
-        element.style.zIndex=-1;
-        
-    };
-
-}
-
+var count=0;
 
 var tripApp = angular.module('tripApp', ['ngRoute']);
 
@@ -60,16 +48,10 @@ var tripApp = angular.module('tripApp', ['ngRoute']);
 
     // Contact  Controller
     tripApp.controller('contactController', function($scope) {
-
-      $scope.message = 'In contact Controller';
-      $scope.ContactInfo=function () {
-          if (!$scope.Name || !$scopeCntInfo) {
-              $scope.message = "Enter Some Information";
-              return;
-          }
-          else
-              $scope.message = "Thank you for your message";
-      }
+        
+        if(count>1) {
+                 $scope.message = "Thank you for your message";
+            }
 
 
     });
