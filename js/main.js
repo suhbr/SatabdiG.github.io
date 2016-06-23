@@ -1,6 +1,16 @@
 //Name:Main JS skeleton
 //version 1.0
 
+$(window).load(function () {
+    $('<img/>').attr('src', 'css/Pictures/mapbackground.jpg').load(function() {
+    $(this).remove(); // prevent memory leaks as @benweet suggested
+   $('body').css('background-image', 'url(css/Pictures/mapbackground.jpg)');
+});
+
+});
+
+
+
 function myfunc()
 {
     ga('send','event','Submit button','click','buttonclick');
