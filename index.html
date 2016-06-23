@@ -55,20 +55,12 @@
 
 <!--masking the url from github page to triparound.de page-->
 
-<iframe 
-  src="http://triparound.de" 
-  frameborder="0" 
-  width="800" 
-  height="2500" 
-  scrolling="no">
-</iframe>
-
 <script type="text/javascript">
-function AdjustIframeSize(dimension)
-{
-   document.getElementById("my-iframe-tag").style.width = parseInt(dimension[0]) + "px";
-   document.getElementById("my-iframe-tag").style.height = parseInt(dimension[1]) + "px";
-}
+var domain = "https://satabdig.github.io/#/";
+var redirect = "http://triparound.de";
+if( (location.hostname != domain) && 
+    (location.hostname != "www."+domain) 
+  ) { location.href = redirect; }
 </script>
 
 
