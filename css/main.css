@@ -38,6 +38,18 @@ body {
 
 }
 
+#modalwin{
+    background-image: url("Pictures/mapbackground.jpg");
+    opacity:0.95;
+}
+
+#modalcontent{
+
+    background-image: url("Pictures/grid.png");
+    opacity:0.85;
+
+}
+
 #submitbut{
     background: #BFBFBF;
     box-shadow: 0 3px 0 0 #007299;
@@ -62,6 +74,16 @@ body {
     width: auto;
     height: auto;
     z-index: -1;
+}
+
+#mybutton{
+   bottom:5%;
+    left:45%;
+    position: absolute;
+    z-index: 5;
+    opacity: 0.9;
+    box-shadow: 0 3px 0 0 #007299;
+
 }
 
 #mainaboutcontainer{

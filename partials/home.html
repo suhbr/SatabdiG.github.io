@@ -10,4 +10,51 @@
 
         </div>
 
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="mybutton" onclick="ga('send','event','contact us','click','buttonclick');" >
+  Click here to get Started
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" id="modalwin">
+    <div class="modal-content" id="modalcontent">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+         <h4 class="modal-title" id="myModalLabel" style="font-family: 'Pacifico', cursive; font-size: 20px"> <i class="fa fa-globe fa-1x" aria-hidden="true"></i>   Be the first to sign up for our services</h4>
+
+      </div>
+        <!--Email form -->
+      <div class="modal-body">
+        <form  name="myform" style="font-size: 17px" id="myform" action="" method="post">
+
+            <div id="textnow"></div>
+            <p style="font-size: 18px">
+                Be one of the first to use our services.
+            <br>
+
+                Leave us your email address to get informed as soon as you can simplify your travel with TripAround.
+            </p>
+
+           <label style="font-size: 18px">Email id: </label>   <input type="email" class="form-control" id="email" name="emailid" required>
+            <br>
+            <label style="font-size: 18px">Feedback :</label>
+            <p>We'd love to hear from you</p>
+            <textarea class="form-control" id="textarea" name="comments" rows="5"></textarea>
+        </form>
+        <!--Form finishes -->
+      </div>
+      <div class="modal-footer">
+          <center>
+               <button type="button" class="btn btn-primary" data-dismiss="modal" style="font-size: 18px">Close</button>
+              <button type="button" class="btn btn-primary" id="submitbutton" onclick="myfunc()" style="font-size: 18px">Submit</button>
+
+
+          </center>
+      </div>
+    </div>
+  </div>
+</div>
+
 
