@@ -83,12 +83,16 @@ body {
 }
 
 #mybutton{
-   bottom:5%;
-    left:45%;
+   bottom:0.7%;
+    left:38%;
     position: absolute;
     z-index: 5;
-    opacity: 0.9;
-    box-shadow: 0 3px 0 0 #007299;
+    opacity: 1;
+    box-shadow: 0 4px 0 0 #4787ed;
+    background-color: #3b5998;
+    min-width: 27%;
+    overflow: auto;
+    font-size: 25px;
 
 }
 
@@ -146,25 +150,14 @@ body {
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 70%;
+    min-height: 70%;
     width: auto;
     height: auto;
     z-index: 1;
 
 }
 
-.video{
-  position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-}
 
 #datatoggler{
     cursor:pointer;
