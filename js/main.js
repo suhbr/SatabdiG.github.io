@@ -6,7 +6,12 @@ $(window).load(function () {
     $(this).remove(); // prevent memory leaks as @benweet suggested
    $('body').css('background-image', 'url(css/Pictures/mapbackground.jpg)');
         });
-    $('#poster').click(function(){this.paused?this.play():this.pause();});
+    $('#poster').click(function(){this.paused?this.play():this.pause();
+    
+        //Display big transparent button
+    
+    
+    });
 });
 
 
